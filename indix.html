@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victoria Mix | Luxury Perfumes</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-glow"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <!-- BRAND (logo + text) -->
+      <a class="brand" href="#home" aria-label="Victoria Mix">
+        <!-- لوغو أول شي حتى يطلع عاليمين بالـ RTL -->
+        <img class="brand-logo" src="assets/img/logo.jpg" alt="Victoria Mix Logo"
+             onerror="this.style.display='none'">
+
+        <div class="brand-text">
+          <div class="brand-title">VICTORIA MIX</div>
+          <div class="brand-sub">Luxury perfumes</div>
+        </div>
+      </a>
+
+      <!-- Toggle -->
+      <button class="nav_toggle" aria-label="فتح القائمة" data-menu-btn>
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- LINKS -->
+      <nav class="nav_links" data-menu>
+        <a href="#home" class="nav_link is-active">الرئيسية</a>
+        <a href="#products" class="nav_link">المنتجات</a>
+        <a href="#gallery" class="nav_link">معرض</a>
+        <a href="#about" class="nav_link">عنا</a>
+        <a href="#contact" class="nav_link">تواصل</a>
+      </nav>
+
+      <a class="btn btn-gold btn-small cta-top" href="#products">تسوق الآن</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <div class="container hero_grid">
+      <!-- IMAGE CARD -->
+      <div class="hero_media">
+        <div class="media-card">
+          <img src="assets/img/hero.jpg" alt="Victoria Mix"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="media-fallback">
+            <p class="muted">حط صورة هون</p>
+            <p class="tiny">assets/img/hero.jpg</p>
+          </div>
+          <span class="chip">Victoria Mix</span>
+        </div>
+      </div>
+
+      <!-- TEXT -->
+      <div class="hero_text">
+        <h1>عطور فخمة</h1>
+        <h2 class="gold">Original &amp; Inspired</h2>
+        <p class="lead">
+          جميع العطور الفرنسية والشرقية — تركيب عطور — ضمان وفوحان 24 ساعة
+        </p>
+
+        <div class="hero_actions">
+          <a class="btn btn-dark" href="#contact">Contact Us</a>
+          <a class="btn btn-gold" href="#products">Shop Now</a>
+        </div>
+
+        <div class="hero_chips">
+          <button class="chip-btn" data-copy="Fast Reply">Fast Reply</button>
+          <button class="chip-btn" data-copy="Copy a Perfume">Copy a Perfume</button>
+          <button class="chip-btn" data-copy="Original Perfume">Original Perfume</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section">
+    <div class="container">
+      <div class="section_head">
+        <h3>المنتجات</h3>
+        <section id="free-stand" class="stand-section">
+  <div class="stand-container">
+    <div class="stand-head">
+      <h2>خد ستاند Victoria Mix مجاناً — <span class="stand-free">0$</span></h2>
+      <p>
+        إذا عندك محل (تياب/صالون/موبايلات/…)، فيك تاخد ستاند جاهز على باب محلك ببلاش ضمن شروط بسيطة.
+      </p>
+    </div>
+
+    <div class="stand-grid">
+      <!-- الميزات -->
+      <div class="stand-card">
+        <h3>ميزات الستاند</h3>
+        <ul class="stand-list">
+          <li>بيزيد جذب الزباين وبيبين محلك “مُرتّب” واحترافي.</li>
+          <li>مناسب لمحلات الموبايلات، الصالونات، السياب، والمزيد.</li>
+          <li>سهولة تركيب + شكل أنيق قدّام المحل.</li>
+          <li>بدون أي دفعة — فقط التزام بالشروط.</li>
+        </ul>
+      </div>
+
+      <!-- الشروط -->
+      <div class="stand-card">
+        <h3>الشروط</h3>
+        <ul class="stand-list">
+          <li>المحل يكون بموقع واضح (واجهة على الشارع).</li>
+          <li>الستاند يضل موجود قدّام المحل (مو تخزين).</li>
+          <li>التزام بالحفاظ عليه وعدم تغييره/كسره.</li>
+          <li>التواصل لطلب الستاند وتحديد العنوان.</li>
+        </ul>
+      </div>
+
+      <!-- الطلب -->
+      <div class="stand-card stand-order">
+        <h3>اطلب الستاند</h3>
+        <section id="stand-order" class="section">
+  <div class="container">
+
+    <h3>اطلب ستاند</h3>
+
+    <div class="stand-row">
+      <label>نوع المحل</label>
+      <select id="shopType" class="stand-input">
+        <option value="">اختر</option>
+        <option value="صالون حلاقة">صالون حلاقة</option>
+        <option value="محل عطور">محل عطور</option>
+        <option value="محل مكياج">محل مكياج</option>
+        <option value="صيدلية">صيدلية</option>
+      </select>
+    </div>
+
+    <div class="stand-row">
+      <label>اسم المحل</label>
+      <input id="shopName" class="stand-input" type="text" placeholder="مثال: Victoria Mix">
+    </div>
+
+    <div class="stand-row">
+      <label>العنوان</label>
+      <input id="address" class="stand-input" type="text" placeholder="الشارع / الحي">
+    </div>
+
+    <div class="stand-row">
+      <label>هل يوجد ستاند حالياً؟</label>
+      <select id="hasStand" class="stand-input">
+        <option value="">اختر</option>
+        <option value="نعم">نعم</option>
+        <option value="لا">لا</option>
+      </select>
+    </div>
+
+    <div class="stand-row">
+      <label>هل هدفك تجاري؟</label>
+      <select id="hasExp" class="stand-input">
+        <option value="">اختر</option>
+        <option value="نعم">نعم</option>
+        <option value="لا">لا</option>
+      </select>
+    </div>
+
+    <div class="stand-row">
+      <label>المدينة / المنطقة</label>
+      <input id="city" class="stand-input" type="text" placeholder="المدينة">
+    </div>
+
+    <button id="standWhatsBtn" class="btn btn-gold" type="button">
+      تواصل واتساب لطلب الستاند
+    </button>
+
+    <p class="stand-note">رح يوصلك مسج جاهز على واتساب</p>
+
+  </div>
+</section>
+          <span class="stand-note">* رح يروحلك مسج جاهز عالواتساب</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stand-foot">
+      <p>بتاخد الستاند <b>مجاناً</b> وبيوصل لعند باب محلك حسب التوفر والمنطقة.</p>
+    </div>
+  </div>
+</section>
+<section class="stand-video">
+  <h2>شرح الستاند</h2>
+  <p>فيديو سريع يشرح شو هو الستاند وكيف فيك تطلبه مجاناً</p>
+
+  <div class="video-box">
+    <video controls playsinline preload="metadata">
+      <source src="assets/video/,.mp4" type="assets/video/mp4" />
+      متصفحك ما بيدعم تشغيل الفيديو
+    </video>
+  </div>
+</section>
+        <p class="muted"></p>
+      </div>
+
+      <!-- JS رح يعبيها -->
+      <div class="cards" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section_head">
+        <h3>معرض</h3>
+        <p class="muted">يتوفر لدينا جميع انواع العطور الاوريجنال....
+        و يتوفر لدينا جميع انواع العطور تاشتوية و الصيفية </p>
+      </div>
+
+<div class="gallery">
+  <div class="g"><img src="assets/img/p2.jpg" alt="Perfume 1"></div>
+  <div class="g"><img src="assets/img/p3.jpg" alt="Perfume 2"></div>
+  <div class="g"><img src="assets/img/p4.jpg" alt="Perfume 3"></div>
+  <div class="g"><img src="assets/img/p5.jpg" alt="Perfume 4"></div>
+  <div class="g"><img src="assets/img/p6.jpg" alt="Perfume 5"></div>
+  <div class="g"><img src="assets/img/p7.jpg" alt="Perfume 6"></div>
+  <div class="g"><img src="assets/img/p8.jpg" alt="Perfume 7"></div>
+</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about">
+      <div>
+        <h3>عن Victoria Mix</h3>
+        <p class="muted">
+        و نحن وكلاء لشركة لطافة السعودية - متجر عطور فخم — Original &amp; Inspired — نركّب حسب الطلب، ونساعدك تختار العطر المناسب. 
+        </p>
+        <div class="about_bullets">
+          <span class="bullet">✓ جودة وتركيز عالي</span>
+          <span class="bullet">✓ Original / Inspired</span>
+          <span class="bullet">✓ توصيل سريع</span>
+        </div>
+      </div>
+
+      <div class="about_box">
+        <p class="tiny muted">جاهز للطلب؟</p>
+        <h4 class="gold">اطلب عالواتساب وبنرد بسرعة</h4>
+      <a class="btn btn-gold" target="_blank"
+      href="https://wa.me/9613949805?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D8%A8%D8%AF%D9%8A%20%D8%A7%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B7%D8%B1">
+      مراسلة واتساب
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section_head">
+        <h3>تواصل معنا</h3>
+      <div class="contact-grid">
+        <!-- INFO -->
+        <div class="info-card">
+          <div class="info-top">
+            <div>
+              <p class="tiny muted">متجر</p>
+              <h4>Victoria Mix</h4>
+              <p class="muted tiny" id="igHandle">@ahmad_perfume</p>
+            </div>
+
+            <button class="btn btn-dark btn-small" data-copy="+963 3 949 805">نسخ الرقم</button>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="info-line">
+            <span class="muted">واتساب:</span>
+            <a class="link" id="waLink" target="_blank" rel="noreferrer">فتح واتساب</a>
+          </div>
+
+         <div class="socials">
+            <a class="pill" href="https://wa.me/9613949805" target="_blank">WhatsApp</a>
+            <a class="pill" href="https://www.instagram.com/victoria_mix12?igsh=Z2lhZm1iYWcyajVq" target="_blank">Instagram</a>
+            <a class="pill" href="https://www.tiktok.com/@ahmad.perfume?_r=1&_t=ZP-92gqMBcEhxP" target="_blank">TikTok</a>
+          </div>
+          <div class="divider"></div>
+      <a class="btn btn-gold"
+        href="https://goo.gl/maps/Win89rqZMMJqNzhE6"
+        target="_blank" rel="noopener">
+        📍 موقعنا على الخريطة
+      </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+<div class="footer-copy">
+  <p>© Victoria Mix. All rights reserved</p>
+  <p>برمجة: ibrahim bkkari</p>
+  <p>📞 0968201410</p>
+</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
