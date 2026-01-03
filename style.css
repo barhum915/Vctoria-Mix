@@ -559,3 +559,45 @@ select option:hover {
   margin: 0;
 }
 
+/* ===== Stand Video Section ===== */
+.stand-video{
+  padding: 40px 0;
+  text-align: center;
+}
+
+.stand-video h2{
+  margin-bottom: 8px;
+}
+
+.stand-video p{
+  margin-bottom: 18px;
+  opacity: .85;
+}
+
+/* إطار أنيق للفيديو */
+.video-box{
+  width: min(900px, 92%);
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+/* المهم: يبين الفيديو كامل وما ينقص */
+.video-box video{
+  width: 100%;
+  height: auto;          /* ✅ ما تثبت height */
+  display: block;
+  object-fit: contain;   /* ✅ يبين كامل الفيديو */
+  background: #000;      /* حتى لو كان في فراغات */
+  max-height: 480px;     /* ✅ يمنع يصير طويل زيادة */
+}
+
+/* موبايل: خلي الارتفاع أصغر */
+@media (max-width: 600px){
+  .video-box video{
+    max-height: 260px;
+  }
+}
